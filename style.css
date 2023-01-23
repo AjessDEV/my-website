@@ -186,7 +186,6 @@ body {
 .t-s-some-pic-container {
     height: 340px;
     width: 340px;
-    border-radius: 30px;
 }
 .t-s-some-pic-container > svg {
     width: 100%;
@@ -215,7 +214,6 @@ body {
 .f-s-some-pic-container {
     height: 340px;
     width: 340px;
-    border-radius: 30px;
 }
 
 .f-s-some-pic-container > svg {
@@ -328,7 +326,7 @@ footer {
     }
 
     .navbar {
-        max-width: 450px;
+        max-width: 320px;
     }
 
     /* FIRST SECTION */
@@ -373,7 +371,7 @@ footer {
     /* THIRD SECTION */
 
     .third-section {
-        max-width: 390px;
+        max-width: 350px;
         margin: 0 auto;
     }
 
@@ -407,5 +405,15 @@ footer {
     footer {
         gap: 15px;
         justify-content: center;
+    }
+
+    .f-s-some-pic-container {
+        height: 220px;
+        width: 220px;
+    }
+
+    .t-s-some-pic-container {
+        height: 220px;
+        width: 220px;
     }
 }
