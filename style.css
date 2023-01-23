@@ -373,7 +373,7 @@ footer {
     /* THIRD SECTION */
 
     .third-section {
-        max-width: 450px;
+        max-width: 390px;
         margin: 0 auto;
     }
 
@@ -386,12 +386,18 @@ footer {
         text-align: center;
     }
 
+    .f-s-title {
+        font-size: 35px;
+    }
     .knowledge-container {
-        max-width: 450px;
+        max-width: 400px;
     }
 
+    .f-list > li > a {
+        font-size: 14px;
+    }
     .footer-logo {
-        margin-left: 20px;
+        margin-left: 18px;
         color: #fff;
         text-decoration: none;
         font-size: 18px;
@@ -399,6 +405,7 @@ footer {
     }
 
     footer {
-        gap: 30px;
+        gap: 15px;
+        justify-content: center;
     }
 }
