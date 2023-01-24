@@ -130,15 +130,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    gap: 80px;
 }
 .s-s-container {
     height: 200px;
     width: 250px;
-    background-color: rgba(80, 80, 80, 0.6);
+    /* background-color: rgba(80, 80, 80, 0.6); */
+    background: url(./img/login-singup.png)no-repeat;
+    background-position: center;
+    background-size: 365px;
     border-radius: 25px;
     position: relative;
-    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: ease 300ms;
+}
+.s-s-container:hover {
+    background-size: 450px;
+}
+.s-s-container > h3 {
+    color: var(--tx-main-color);
+    position: relative;
+    top: 108%;
 }
 .s-s-container-hover {
     height: 200px;
@@ -147,7 +159,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +169,7 @@ body {
 }
 .s-s-container-hover > h4 {
     color: #fff;
-    background-color: #21a5fd8e;
+    background-color: #21a5fd;
     padding: 10px;
     border-radius: 20px;
     font-size: 20px;
@@ -165,6 +177,186 @@ body {
 .s-s-container-hover:hover {
     opacity: 1;
 }
+.s-s-container2 {
+    height: 200px;
+    width: 250px;
+    /* background-color: rgba(80, 80, 80, 0.6); */
+    background: url(./img/PM.png)no-repeat;
+    background-size: 365px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: ease 300ms;
+}
+.s-s-container2:hover {
+    background-size: 450px;
+}
+.s-s-container2 > h3 {
+    color: var(--tx-main-color);
+    position: relative;
+    top: 108%;
+}
+.s-s-container2-hover {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.s-s-container2-hover > h4 {
+    color: #fff;
+    background-color: #21a5fd;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.s-s-container2-hover:hover {
+    opacity: 1;
+}
+.s-s-container3 {
+    height: 200px;
+    width: 250px;
+    /* background-color: rgba(80, 80, 80, 0.6); */
+    background: url(./img/S-Mart.png)no-repeat;
+    background-position: center;
+    background-size: 520px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: ease 300ms;
+}
+.s-s-container3:hover {
+    background-size: 650px;
+}
+.s-s-container3 > h3 {
+    color: var(--tx-main-color);
+    position: relative;
+    top: 108%;
+}
+.s-s-container3-hover {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.s-s-container3-hover > h4 {
+    color: #fff;
+    background-color: #21a5fd;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.s-s-container3-hover:hover {
+    opacity: 1;
+}
+.s-s-container4 {
+    height: 200px;
+    width: 250px;
+    /* background-color: rgba(80, 80, 80, 0.6); */
+    background: url(./img/test\ game.png)no-repeat;
+    background-position: center;
+    background-size: 365px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: ease 300ms;
+}
+.s-s-container4:hover {
+    background-size: 450px;
+}
+.s-s-container4 > h3 {
+    color: var(--tx-main-color);
+    position: relative;
+    top: 108%;
+}
+.s-s-container4-hover {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.s-s-container4-hover > h4 {
+    color: #fff;
+    background-color: #21a5fd;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.s-s-container4-hover:hover {
+    opacity: 1;
+}
+.s-s-container5 {
+    height: 200px;
+    width: 250px;
+    background-color: rgba(80, 80, 80, 0.6);
+    /* background: url(./img/login-singup.png)no-repeat;
+    background-position: center;
+    background-size: 365px; */
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
+    transition: ease 300ms;
+}
+.s-s-container5:hover {
+    background-size: 450px;
+}
+.s-s-container5 > h3 {
+    color: var(--tx-main-color);
+    position: relative;
+    top: 108%;
+}
+.s-s-container5-hover {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.s-s-container5-hover > h4 {
+    color: #fff;
+    background-color: #21a5fd;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.s-s-container5-hover:hover {
+    opacity: 1;
+}
+
 
 .third-section {
     display: flex;
@@ -214,6 +406,7 @@ body {
 .f-s-some-pic-container {
     height: 340px;
     width: 340px;
+    
 }
 
 .f-s-some-pic-container > svg {
@@ -227,15 +420,15 @@ body {
     justify-content: center;
     max-width: 500px;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 70px;
 }
 .knowledge {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
 }
 .knowledge > img {
     width: 100%;
