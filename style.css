@@ -477,6 +477,8 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 120px 25px 25px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .s-title {
@@ -495,8 +497,6 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .service {
     display: flex;
@@ -724,8 +724,20 @@ footer {
         width: 220px;
     }
 
+/*   SERVICE   */
+    .service-container {
+        max-width: 330px;
+    }
+    
     /* CONTACT */
 
+    
+    .contact-container > h1{
+        font-size: 34px;
+    }
+    .contact-container > p{
+        font-size: 14px;
+    }
     .socialmedia-container {
         display: flex;
         flex-wrap: wrap;
