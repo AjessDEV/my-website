@@ -196,6 +196,7 @@ body {
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
+    padding: 0 13px;
 }
 .logo {
     line-height: 65px;
@@ -692,7 +693,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 25px 25px 25px;
+    padding-top: 120px;
 }
 
 .s-title {
@@ -991,6 +992,14 @@ footer {
     }
 
     /* CONTACT */
+
+    .contact-container > h1 {
+        font-size: 37px;
+    }
+
+    .contact-container > p {
+        font-size: 22px;
+    }
 
     .socialmedia-container {
         display: flex;
