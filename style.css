@@ -13,7 +13,7 @@
 
 *::-webkit-scrollbar {
     width: 8px;
-    background-color: #f2f2f2;
+    background-color: var(--bc-color);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -23,7 +23,163 @@
 html,
 body {
     background-color: #f2f2f2;
+    transition: ease 300ms;
 }
+.darkmode {
+    background-color: var(--bc-color);
+    color: #f2f2f2;
+}
+.header-darkmode {
+    background-color: var(--bc-color);
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    z-index: 1000000;
+    transition: ease 300ms;
+}
+
+.nav-link-darkmode::after {
+    content: '';
+    background-color: var(--tx-main-color);
+    position: absolute;
+    top: 78%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    transition: ease 200ms;
+    opacity: 0;
+}
+.nav-link-darkmode:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+.nav-link-darkmode {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.t-s-paragraph-darkmode {
+    color: #f2f2f2;
+    font-size: 20px;
+    max-width: 512px;
+    transition: ease 300ms;
+}
+
+.service-darkmode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #323236;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
+    padding: 34px;
+    width: 270px;
+    height: 400px;
+    transition: ease 300ms;
+}
+.service-darkmode:hover {
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.service-darkmode > h1 {
+    color: var(--tx-main-color);
+    text-align: center;
+}
+.service-list-darkmode {
+    list-style: none;
+}
+.service-list-darkmode > li {
+    display: flex;
+    gap: 15px;
+}
+
+.w-t-paragraph-darkmode {
+    color: #f2f2f2;
+    font-size: 37px;
+    transition: ease 300ms;
+}
+
+.c-c-paragraph-darkmode{
+    color: #f2f2f2;
+    font-size: 25px;
+    transition: ease 300ms;
+}
+.socialmedia-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia-darkmode:hover {
+    color: var(--tx-main-color);
+}
+
+.socialmedia2-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia2-darkmode:hover {
+    color: var(--tx-main-color);
+}
+.socialmedia3-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia3-darkmode:hover {
+    color: var(--tx-main-color);
+}
+.socialmedia4-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia4-darkmode:hover {
+    color: var(--tx-main-color);
+}
+.socialmedia5-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia5-darkmode:hover {
+    color: var(--tx-main-color);
+}
+.socialmedia6-darkmode {
+    color: #f2f2f2;
+    font-size: 50px;
+    transition: ease 200ms;
+}
+.socialmedia6-darkmode:hover {
+    color: var(--tx-main-color);
+}
+
+.s-paragraph-darkmode {
+    color: #f2f2f2;
+    font-size: 25px;
+    margin-bottom: 40px;
+    transition: ease 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header {
     position: fixed;
@@ -32,6 +188,7 @@ body {
     background-color: #f2f2f2;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
     z-index: 1000000;
+    transition: ease 300ms;
 }
 
 .navbar {
@@ -77,6 +234,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--bc-color);
+    transition: ease 300ms;
 }
 
 .menu-btn {
@@ -84,23 +242,76 @@ body {
     cursor: pointer;
 }
 
+.dark-lightmode-container {
+    line-height: 65px;
+    padding: 0;
+}
+.darkmode-btn {
+    background: none;
+    color: var(--tx-main-color);
+    padding: 5px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease 300ms;
+    margin: 0 2px;
+}
+.darkmode-btn:active {
+    transform: scale(0.5);
+}
+.darkmode-btn_active {
+    background: var(--tx-main-color);
+    color: #f2f2f2;
+}
+.lightmode-btn {
+    background-color: var(--tx-main-color);
+    color: #f2f2f2;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease 300ms;
+    margin: 0 2px;
+}
+.lightmode-btn:active {
+    transform: scale(0.5);
+}
+.lightmode-btn_active {
+    background: none;
+    color: var(--tx-main-color);
+}
+
+
 .w-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 992px;
-    margin: 0 auto;
+
     align-items: center;
-    padding: 120px 0 60px 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(180deg, #39393d, var(--bc-color));
+}
+.w-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 .w-t-title {
-    font-size: 42px;
+    font-size: 62px;
     color: var(--tx-main-color);
+    text-align: center;
 }
+
 .w-t-paragraph {
-    font-size: 37px;
+    font-size: 47px;
     color: var(--bc-color);
+    transition: ease 300ms;
+    text-align: center;
 }
 .some-product-container {
     width: 400px;
@@ -119,7 +330,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 120px;
-    padding-top: 90px;
+    padding-top: 0px;
 }
 
 .s-s-title {
@@ -141,7 +352,7 @@ body {
     background: url(./img/login-singup.png)no-repeat;
     background-position: center;
     background-size: 365px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
     transition: ease 300ms;
@@ -160,7 +371,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -185,7 +396,7 @@ body {
     /* background-color: rgba(80, 80, 80, 0.6); */
     background: url(./img/PM.png)no-repeat;
     background-size: 365px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
     transition: ease 300ms;
@@ -204,7 +415,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -230,7 +441,7 @@ body {
     background: url(./img/S-Mart.png)no-repeat;
     background-position: center;
     background-size: 520px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
     transition: ease 300ms;
@@ -249,7 +460,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -275,7 +486,7 @@ body {
     background: url(./img/test\ game.png)no-repeat;
     background-position: center;
     background-size: 365px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
     transition: ease 300ms;
@@ -294,7 +505,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -320,7 +531,7 @@ body {
     /* background: url(./img/login-singup.png)no-repeat;
     background-position: center;
     background-size: 365px; */
-    border-radius: 25px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.3);
     transition: ease 300ms;
@@ -339,7 +550,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -368,6 +579,10 @@ body {
     gap: 100px;
     margin-bottom: 120px;
     padding-top: 90px;
+    /* padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    background: linear-gradient(45deg, #21a5fd, #34a7f3); */
 }
 .t-s-title {
     font-size: 50px;
@@ -377,6 +592,7 @@ body {
     font-size: 20px;
     color: var(--bc-color);
     max-width: 512px;
+    transition: ease 300ms;
 }
 .t-s-some-pic-container {
     height: 340px;
@@ -477,8 +693,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 120px 25px 25px 25px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .s-title {
@@ -497,6 +711,8 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .service {
     display: flex;
@@ -555,7 +771,7 @@ footer {
     font-size: 50px;
     color: var(--tx-main-color);
 }
-.contact-container > p {
+.c-c-paragraph {
     color: var(--bc-color);
     font-size: 25px;
 }
@@ -572,14 +788,64 @@ footer {
 .socialmedia {
     color: var(--bc-color);
     font-size: 50px;
-    transition: ease 200ms;
+    transition: ease 300ms;
 }
 .socialmedia:hover {
     color: var(--tx-main-color);
 }
 
 
-@media (max-width: 800px) {
+.socialmedia2 {
+    color: var(--bc-color);
+    font-size: 50px;
+    transition: ease 300ms;
+}
+.socialmedia2:hover {
+    color: var(--tx-main-color);
+}
+
+
+.socialmedia3 {
+    color: var(--bc-color);
+    font-size: 50px;
+    transition: ease 300ms;
+}
+.socialmedia3:hover {
+    color: var(--tx-main-color);
+}
+
+
+.socialmedia4 {
+    color: var(--bc-color);
+    font-size: 50px;
+    transition: ease 300ms;
+}
+.socialmedia4:hover {
+    color: var(--tx-main-color);
+}
+
+
+.socialmedia5 {
+    color: var(--bc-color);
+    font-size: 50px;
+    transition: ease 300ms;
+}
+.socialmedia5:hover {
+    color: var(--tx-main-color);
+}
+
+
+.socialmedia6 {
+    color: var(--bc-color);
+    font-size: 50px;
+    transition: ease 300ms;
+}
+.socialmedia6:hover {
+    color: var(--tx-main-color);
+}
+
+
+@media (max-width: 992px) {
 
     /* NAVBAR */
 
@@ -608,7 +874,7 @@ footer {
         gap: 8px;
         padding: 32px 32px;
         height: 100vh;
-        background-color: #f2f2f2;
+        background-color: #2a2a2d;
         box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.25);
         transition: ease 500ms;
     }
@@ -633,7 +899,7 @@ footer {
     }
 
     .navbar {
-        max-width: 320px;
+        max-width: 400px;
     }
 
     /* FIRST SECTION */
@@ -724,20 +990,8 @@ footer {
         width: 220px;
     }
 
-/*   SERVICE   */
-    .service-container {
-        max-width: 330px;
-    }
-    
     /* CONTACT */
 
-    
-    .contact-container > h1{
-        font-size: 34px;
-    }
-    .contact-container > p{
-        font-size: 14px;
-    }
     .socialmedia-container {
         display: flex;
         flex-wrap: wrap;
@@ -748,11 +1002,106 @@ footer {
     }
     
     .socialmedia {
-        color: var(--bc-color);
         font-size: 35px;
-        transition: ease 200ms;
     }
     .socialmedia:hover {
+        color: var(--tx-main-color);
+    }
+
+    .socialmedia2 {
+        font-size: 35px;
+    }
+    .socialmedia2:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia3 {
+        font-size: 35px;
+    }
+    .socialmedia3:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia4 {
+        font-size: 35px;
+    }
+    .socialmedia4:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia5 {
+        font-size: 35px;
+    }
+    .socialmedia5:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia6 {
+        font-size: 35px;
+    }
+    .socialmedia6:hover {
+        color: var(--tx-main-color);
+    }
+
+
+
+    /* DARKMODE */
+
+    .t-s-paragraph-darkmode {
+        text-align: center;
+        font-size: 17px;
+    }
+    .w-t-paragraph-darkmode {
+        font-size: 23px;
+    }
+    .socialmedia-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia-darkmode:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia2-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia2-darkmode:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia3-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia3-darkmode:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia4-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia4-darkmode:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia5-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia5-darkmode:hover {
+        color: var(--tx-main-color);
+    }
+
+
+    .socialmedia6-darkmode {
+        font-size: 35px;
+    }
+    .socialmedia6-darkmode:hover {
         color: var(--tx-main-color);
     }
 }

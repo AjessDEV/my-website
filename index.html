@@ -8,17 +8,17 @@
     <script src="https://kit.fontawesome.com/4f12ee4706.js" crossorigin="anonymous"></script>
     <title>Alexander Espinoza - Front End Developer</title>
 </head>
-<body>
-    <header class="header">
+<body class="darkmode">
+    <header class="header-darkmode">
         <nav class="navbar">
             <a href="#" class="logo">Alexander.</a>
 
             <ul class="nav-list">
-                <li class="nav-list-item"><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li class="nav-list-item"><a href="#about" class="nav-link">Acerca de</a></li>
-                <li class="nav-list-item"><a href="#knowledge" class="nav-link">Conocimientos</a></li>
-                <li class="nav-list-item"><a href="#services" class="nav-link">Servicios</a></li>
-                <li class="nav-list-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                <li class="nav-list-item"><a href="#projects" class="nav-link-darkmode">Proyectos</a></li>
+                <li class="nav-list-item"><a href="#about" class="nav-link-darkmode">Acerca de</a></li>
+                <li class="nav-list-item"><a href="#knowledge" class="nav-link-darkmode">Conocimientos</a></li>
+                <li class="nav-list-item"><a href="#services" class="nav-link-darkmode">Servicios</a></li>
+                <li class="nav-list-item"><a href="#contact" class="nav-link-darkmode">Contacto</a></li>
             </ul>
 
             <button class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
@@ -28,10 +28,9 @@
     <div class="w-container" id="home">
         <div class="w-text">
             <h1 class="w-t-title">Alexander Espinoza</h1>
-            <p class="w-t-paragraph">Desarrollador Web <b>Front End</b></p>
+            <p class="w-t-paragraph-darkmode">Desarrollador Web <b>Front End</b></p>
         </div>
-        <div class="some-product-container"><img src="./img/profile-pic.png" alt="Programador"></div>
-    </div>
+        </div>
 <br><br>
     <main>
         <div class="second-section" id="projects">
@@ -39,35 +38,35 @@
             <br><br>
             <div class="s-s-containers">
 
-                <div class="s-s-container">
+                <div class="s-s-container" id="pro1">
                     <div class="s-s-container-hover">
-                        <h4>Ver Proyecto</h4>
+                        <h4 id="pro-btn1">Ver Proyecto</h4>
                     </div>
                     <h3>Log in / Sing Up</h3>
                 </div>
-                <div class="s-s-container2">
+                <div class="s-s-container2" id="pro2">
                     <div class="s-s-container2-hover">
-                        <h4>Ver Proyecto</h4>
+                        <h4 id="pro-btn2">Ver Proyecto</h4>
                     </div>
                     <h3>Password Manager</h3>
                 </div>
-                <div class="s-s-container3">
+                <div class="s-s-container3" id="pro3">
                     <div class="s-s-container3-hover">
-                        <h4>Ver Proyecto</h4>
+                        <h4 id="pro-btn3">Ver Proyecto</h4>
                     </div>
                     <h3>Shopping Cart</h3>
                 </div>
-                <div class="s-s-container4">
+                <div class="s-s-container4" id="pro4">
                     <div class="s-s-container4-hover">
-                        <h4>Ver Proyecto</h4>
+                        <h4 id="pro-btn4">Ver Proyecto</h4>
                     </div>
-                    <h3>Test Game</h3>
+                    <h3>Quiz Game</h3>
                 </div>
-                <div class="s-s-container5">
+                <!-- <div class="s-s-container5">
                     <div class="s-s-container5-hover">
                         <h4>Ver Proyecto</h4>
                     </div>
-                </div>
+                </div> -->
                 
             </div>
 
@@ -76,7 +75,7 @@
         <div class="third-section" id="about">
             <div class="t-s-text">
                 <h1 class="t-s-title">Acerca de</h1><br>
-                <p class="t-s-paragraph">Soy Alexander Espinoza, me dedico al Desarrollo Web Front End y Soy de Venezuela.<br>Con Experiencia en lenguajes como <b style="color: #dd9611;" alt="HTML">HTML</b>, <b style="color: #21a5fd;" CSS="CSS">CSS</b> y actualmente Aprendiendo <b style="color: #c2a500" alt="JavaScript">JAVASCRIPT</b>. Tambien con Experiencia en el Desarrollo de Videojuegos en <b alt="Unity Engine">Unity</b> Utilizando el lenguaje <b style="color: #56d;" alt="C Sharp lenguage">C#</b> y Edicion de imagenes en <b alt="Adobe Photoshop">Photoshop</b>.</p>
+                <p class="t-s-paragraph-darkmode">Soy Alexander Espinoza, me dedico al Desarrollo Web Front End y Soy de Venezuela.<br>Con Experiencia en lenguajes como <b style="color: #dd9611;" alt="HTML">HTML</b>, <b style="color: #21a5fd;" CSS="CSS">CSS</b> y actualmente Aprendiendo <b style="color: #c2a500" alt="JavaScript">JAVASCRIPT</b>. Tambien con Experiencia en el Desarrollo de Videojuegos en <b alt="Unity Engine">Unity</b> Utilizando el lenguaje <b style="color: #56d;" alt="C Sharp lenguage">C#</b> y Edicion de imagenes en <b alt="Adobe Photoshop">Photoshop</b>.</p>
             </div>
 
             <div class="t-s-some-pic-container">
@@ -123,9 +122,10 @@
             <p class="s-paragraph">Para Desarrollo de Sitios Web</p>
 
             <div class="s-flex-container">
-                <div class="service">
+                <div class="service-darkmode">
                     <h1>Landing Page</h1>
-                    <ul class="service-list">
+
+                    <ul class="service-list-darkmode">
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Personalizado</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Responsive</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Formulario de Contacto</li>
@@ -136,13 +136,13 @@
                         <li>Cantidad de Paginas: 1</li>
                     </ul>
                     
-                    <a href="#" class="service-btn">Contactar</a>
+                    <a href="#contact" class="service-btn">Contactar</a>
                 </div>
 
-                <div class="service" >
+                <div class="service-darkmode" >
                     <h1>E-commerce<br>(Básico)</h1>
 
-                    <ul class="service-list">
+                    <ul class="service-list-darkmode">
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Personalizado</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Responsive</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Formulario de Contacto</li>
@@ -153,12 +153,12 @@
                         <li>Cantidad de Paginas: Principal + 1 x Producto</li>
                     </ul>
                     
-                    <a href="#" class="service-btn">Contactar</a>
+                    <a href="#contact" class="service-btn">Contactar</a>
                 </div>
 
-                <div class="service">
+                <div class="service-darkmode">
                     <h1>E-commerce<br>(Completo)</h1>
-                    <ul class="service-list">
+                    <ul class="service-list-darkmode">
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Personalizado</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Diseño Responsive</li>
                         <li><i style="color: green;" class="fa-solid fa-check"></i>Formulario de Contacto</li>
@@ -169,7 +169,7 @@
                         <li>Cantidad de Paginas: Principal + 1 x Producto</li>
                     </ul>
                     
-                    <a href="#" class="service-btn">Contactar</a>
+                    <a href="#contact" class="service-btn">Contactar</a>
                 </div>
             </div>
         </div>
@@ -177,15 +177,15 @@
 
         <div class="contact-container" id="contact">
             <h1>¡Contactame!</h1>
-            <p>Trabajemos en tus Proyectos</p>
+            <p class="c-c-paragraph-darkmode">Trabajemos en tus Proyectos</p>
 
             <div class="socialmedia-container">
-                <a href="#" class="socialmedia"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#" class="socialmedia"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="socialmedia"><i class="fa-brands fa-discord"></i></a>
-                <a href="#" class="socialmedia"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="socialmedia"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="socialmedia"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:ajessdev@gmail.com" class="socialmedia-darkmode"><i class="fa-solid fa-envelope"></i></a>
+                <!-- <a href="#" class="socialmedia-darkmode"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                <!-- <a href="#" class="socialmedia-darkmode"><i class="fa-brands fa-discord"></i></a> -->
+                <a href="https://github.com/AjessDEV" class="socialmedia-darkmode" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/AjessDEV" class="socialmedia-darkmode" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <!-- <a href="#" class="socialmedia-darkmode"><i class="fa-brands fa-instagram"></i></a> -->
             </div>
         </div>
 
